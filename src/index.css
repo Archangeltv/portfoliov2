@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Quicksand", sans-serif;
+  @apply bg-black;
+}
+
+.padding {
+  @apply px-3 md:px-10 lg:px-20;
+}
+
+.hamburger line {
+  animation: to-open-icon 1s forwards;
+}
+
+button[aria-expanded="true"] line {
+  stroke-dashoffset: 79.9;
+  animation: to-close-icon 0.5s forwards;
+}
+
+.hamburger line.top {
+  --rotation: -45deg;
+  transform-origin: 65px 45px;
+}
+
+.hamburger line.bottom {
+  --rotation: 45deg;
+  transform-origin: 60px 55px;
+}
+
+@keyframes to-close-icon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+    rotate: var(--rotation);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+}
+
+@keyframes to-open-icon {
+  100% {
+    stroke-dashoffset: 0;
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+    rotate: var(--rotation);
+  }
+  0% {
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+}
