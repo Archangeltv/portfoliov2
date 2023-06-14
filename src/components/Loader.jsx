@@ -16,7 +16,7 @@ const Loader = () => {
         <motion.main
           exit={{ x: -window.innerWidth }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="bg-black place-items-center uppercase grid w-screen h-screen"
+          className="bg-black place-items-center uppercase grid w-screen h-[100dvh]"
         >
           <motion.div
             layout
@@ -25,7 +25,7 @@ const Loader = () => {
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 1, ease: "easeOut" }}
               className=" heading text-5xl"
             >
               Aimiuwu
@@ -34,7 +34,7 @@ const Loader = () => {
               <motion.h1
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
+                transition={{ duration: 1, ease: "easeOut" }}
               >
                 Victor
               </motion.h1>
