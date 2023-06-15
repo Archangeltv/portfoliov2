@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Typed from "typed.js";
 import Projects from "../components/homepageSections/Projects";
+import { MdArrowDownward } from "react-icons/md";
 
 const HomePage = () => {
   const [dateTime, setDateTime] = useState("");
@@ -85,15 +86,20 @@ const Hero = () => {
 
   return (
     <main className=" h-[calc(100vh - 120px)] flex-col flex  py-36 lg:py-20 ">
-      <div className="text-6xl md:text-[90px] lg:text-center w-full font-bold text-gray-200 ">
+      <div className=" text-5xl sm2:text-[55px] smm:text-6xl md:text-[115px] lg:text-[90px] lg:text-center w-full font-bold text-gray-200 ">
         <p className="lg:text-center">I'M A</p>
         <h1>
-          <span ref={textRef}>SOFTWARE</span> DEVELOPER
+          '<span ref={textRef}></span> DEVELOPER
         </h1>
-        <p className="text-2xl">BASED IN NIGERIA</p>
+        <p className="text-xl font-medium">BASED IN NIGERIA</p>
       </div>
       <div className="  ">
-        <p className="text-xl mt-32 md:text-2xl">Scroll to see my Projects</p>
+        <p className="text-xl font-normal flex items-center gap-3 mt-32 ">
+          Scroll to see my Projects
+          <span className=" animate-bounce ">
+            <MdArrowDownward />
+          </span>
+        </p>
       </div>
     </main>
   );
