@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`padding duration-500  text-white shadow items-center flex justify-between py-2 md:py-4 `}
+        className={`padding duration-500 bg-black fixed w-full top-0 left-0 text-white shadow items-center flex justify-between py-2 md:py-4 `}
       >
         <h1 className="text-2xl z-10 mix-blend-difference font-semibold">
           Archangel

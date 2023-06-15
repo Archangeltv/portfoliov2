@@ -45,7 +45,7 @@ const Loader = () => {
                 className="text-sm grid place-content-center"
               >
                 <p>web developer</p>
-                <p>software engineer</p>
+                <p>software Developer</p>
               </motion.div>
             </div>
           </motion.div>
